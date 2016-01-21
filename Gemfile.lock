@@ -1,0 +1,19 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    kramdown (1.9.0)
+    markdown2confluence (0.0.4)
+      kramdown
+      nokogiri
+    mini_portile2 (2.0.0)
+    nokogiri (1.6.7.2)
+      mini_portile2 (~> 2.0.0.rc2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  markdown2confluence
+
+BUNDLED WITH
+   1.10.6

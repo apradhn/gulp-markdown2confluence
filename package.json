@@ -1,0 +1,19 @@
+{
+  "name": "gulp-markdown2confluence",
+  "version": "1.0.0",
+  "description": "Gulp task that uses [markdown2confluence](https://github.com/jedi4ever/markdown2confluence)",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp-exec": "^2.1.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-util": "^3.0.7",
+    "gulp": "^3.9.0",
+    "gulp-watch": "^4.3.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "gulp watch"
+  },
+  "author": "Abhijit Pradhan",
+  "license": "ISC"
+}
