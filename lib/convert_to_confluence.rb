@@ -1,10 +1,12 @@
 require 'markdown2confluence'
+require 'fileutils'
 
 begin
     if ARGV.size == 0
         Dir.glob('markdown/*.md') do |md_file|
             File.open(md_file, 'r') do |file|
                 text = Kramdown::Document.new(file.read).to_confluence
+                dirname = File.dirname('confluence')
                 dest = md_file.sub('.md', '.confluence').sub('markdown', 'confluence')
                 File.open(dest, 'w') { |file| file.write(text)}
                 puts 'compiled markdown file to ' + dest
